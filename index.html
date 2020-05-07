@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="header">
+      <img id="logo" src="images/logo.svg">
+      <div class="score">
+        <span>Score</span>
+        <h2 id="scoreText">0</h2>
+      </div>
+    </div>
+  </header>
+  
+
+  <div class="container">
+    <div class="triangle">
+      <button id="rock" class="btn btnHover rock">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="49" height="59">
+          <path fill="#3B4262" d="M45.06 12.22c-.642-8.096-9.734-7.269-9.734-7.269-3.837-6.765-9.832-1.865-9.832-1.865-4.606-6.63-10.38-.486-10.38-.486-9.957-1.074-9.571 7.066-9.571 7.066-.234 2.588 1.403 10.593 1.403 10.593-1.477-4.614-4.68-.784-4.68-.784-3.94 6.078-.975 9.405-.975 9.405 5.33 6.246 16.688 13.743 16.688 13.743 4.113 2.356 2.373 4.457 2.373 4.457l24.876-4.11.571-4.718c3.782-11.436-.739-26.032-.739-26.032z"/>
+        </svg>
+      </button>
+      <button id="paper" class="btn btnHover paper">
+        <img src="images/icon-paper.svg" alt="paper">
+      </button>
+      <button id="scissors" class="btn btnHover scissors">
+        <img src="images/icon-scissors.svg" alt="scissor">
+      </button>
+    </div>
+
+    <div class="game">
+      <div style="width:300px;">
+        <p>You picked</p><br><br><br><br>
+        <button id="player">
+          <img id="playerImg" src="">
+        </button>
+      </div>
+      <div class="winner">
+        <h1 id="resultText"></h1>
+        <button class="playAgain">Play again</button>
+      </div>
+      <div style="width:300px;">
+        <p>The house picked</p><br><br><br><br>
+        <button id="house" class="btn houseBtn plainBtn">
+          <img id="houseImg" src="">
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="rules">
+    <button id="rulesBtn">Rules</button>
+    <div id="rulesModal" class="modal">
+      <div class="modal-content">
+        <div style="display: flex; justify-content: space-between;">
+          <h1>Rules</h1><span class="close">&times;</span>
+        </div>
+        <img src="images/image-rules.svg">
+      </div>
+    </div>
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/anjakhan/" target="_blank">Anja Khan</a>.
+  </div>
+
+  <script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>
