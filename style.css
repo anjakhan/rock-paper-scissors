@@ -301,11 +301,13 @@ p {
     position:static;
     transform:scale(1);
     transition:0.5s;
+    margin-right: 10px;
   }
   .houseBtn {
     position:static;
     transform:scale(1);
     transition:0.3s;
+    margin-left:10px;
   }
   .container {
     padding:30px;
@@ -321,7 +323,6 @@ p {
     height: 30px;
   }
   .mobileBtn {
-    width:45%;
     margin: 0 10px;
   }
   .winner {
