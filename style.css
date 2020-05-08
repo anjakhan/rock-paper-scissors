@@ -4,11 +4,12 @@
 
 body {
   margin:0;
+  padding:20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   background: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
-  height:100vh;
+  height:100%;
   -ms-overflow-style: none;
   font-family: 'Barlow Semi Condensed', sans-serif;
 }
@@ -21,7 +22,6 @@ body::-webkit-scrollbar {
 header {
   display: flex;
   justify-content: center;
-  padding: 0 20px;
 }
 
 .header {
@@ -70,7 +70,7 @@ h2 {
 .container {
   display:flex;
   justify-content: center;
-  padding:60px;
+  padding:20px;
 }
 
 .triangle {
@@ -79,6 +79,7 @@ h2 {
   background-size: contain;
   height:300px;
   width:250px;
+  margin: 40px;
 }
 
 .game {
@@ -91,9 +92,18 @@ h2 {
   cursor: default;
 }
 
+.mobileBtn {
+  width: 250px;
+  margin: 20px;
+}
+
+.mobileBtn p {
+  padding-bottom: 40px;
+}
+
 .winner {
   display: none;
-  padding: 50px 20px;
+  padding: 50px 10px;
   padding-top: 100px;
   align-self: center;
 }
@@ -186,15 +196,6 @@ p {
   cursor: default;
 }
 
-/*.boxShadow {
-  box-shadow:inset 0px 5px 0px 0px #ccc, 
-    0px 6px 0px 0px hsl(230, 89%, 52%),
-    0px 0px 0px 30px rgba(255,255,255,0.06),
-    0px 0px 0px 60px rgba(255,255,255,0.03),
-    0px 0px 0px 100px rgba(255,255,255,0.01);
-  transition: box-shadow 10000;
-}*/
-
 #rulesBtn {
   position:fixed;
   bottom:10px;
@@ -266,6 +267,12 @@ p {
 .attribution { 
     font-size: 11px;
     text-align: center;
+    position: fixed;
+    right: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    bottom: 20px;
 }
 .attribution a { 
     color: hsl(228, 45%, 44%); 
@@ -280,5 +287,50 @@ p {
   }
   .score {
     transform: scale(0.7);
+  }
+  .rules {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  #rulesBtn {
+    position: relative;
+    right: 0;
+  }
+  .playerBtn {
+    position:static;
+    transform:scale(1);
+    transition:0.5s;
+  }
+  .houseBtn {
+    position:static;
+    transform:scale(1);
+    transition:0.3s;
+  }
+  .container {
+    padding:30px;
+    margin: 10px 0;
+  }
+  .game {
+    flex-wrap:wrap;
+    height: auto;
+  }
+  .mobileBtn p {
+    margin: 0 10px;
+    padding: 0;
+    height: 30px;
+  }
+  .mobileBtn {
+    width:40%;
+    margin: 0 10px;
+  }
+  .winner {
+    order:5;
+    width:100%;
+    padding: 20px;
+  }
+  .attribution {
+    position: relative;
+    bottom: 0;
   }
 }
