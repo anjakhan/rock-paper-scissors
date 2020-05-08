@@ -323,8 +323,8 @@ p {
     height: 30px;
   }
   .mobileBtn {
-    margin: 0 10px;
-    width: 40%;
+    margin: 0 5px;
+    width: 30%;
   }
   .winner {
     order:5;
